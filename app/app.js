@@ -1,12 +1,24 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
+angular.module('myApp.directive',[]);
+angular.module('myApp.service',[]);
+
+angular.module('myApp.core',[
+    /* Angular Module */
+    'ngRoute'
+    /* Cross App Module */
+    /*3rd-party modules */
+]);
+
 angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+    /*Shared Modules*/
+    'myApp.core',
+    'myApp.directive',
+    'myApp.service',
+
+    /*Features areas*/
+    'myApp.view1',
+    'myApp.view2'
+]);
+
+
