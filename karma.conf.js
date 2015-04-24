@@ -10,8 +10,8 @@ module.exports = function(config){
 
         'app/*.js',
         'app/core/*.js',
-        'app/directive/*.js',
-        'app/service/*.js',
+        'app/common/directive/*.js',
+        'app/common/service/*.js',
 
         'app/view*/*.js'
     ],

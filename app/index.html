@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+  <base href="/" />
+
 </head>
 <body>
 
@@ -31,6 +34,8 @@
   <script src="app.js"></script>
   <script src="core/route.js"></script>
   <script src="core/exceptionHandler.js"></script>
+  <script src="core/configuration.js"></script>
+
 
   <script src="view1/View1.module.js"></script>
   <script src="view1/view1.controller.js"></script>
@@ -38,8 +43,9 @@
   <script src="view2/View2.module.js"></script>
   <script src="view2/view2.controller.js"></script>
 
-  <script src="directive/hello.js"></script>
+  <script src="common/directive/hello.js"></script>
 
-  <script src="service/LogService.js"></script>
+  <script src="common/service/LogService.js"></script>
+  <script src="common/service/HttpInterceptor.js"></script>
 </body>
 </html>
